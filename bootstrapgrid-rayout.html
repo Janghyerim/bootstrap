@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrapgrid-rayout</title>
+     <!-- 합쳐지고 최소화된 최신 CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+     <!-- 부가적인 테마 -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+ 
+     <style>
+        header {
+            height: 100px;
+            border-radius: 15px;
+            text-align: center;
+            background-color: rgb(247, 247, 199);
+            padding: 10px;
+            margin: 10px 0;
+            font-family: "맑은 고딕";
+        }
+
+        ul.nav {
+            background-color: antiquewhite;
+            padding: 10px;
+            width: 150px;
+            border-radius: 15px;
+        }
+
+        .banner {
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 15px;
+            height: 200px;
+        }
+
+        .col-md-10 {
+            font-family: "맑은 고딕";
+            padding: 20px;
+            
+        }
+
+        footer {
+            font-family: "맑은 고딕";
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+     </style>
+ 
+ </head>
+ <body>
+    <!-- container-fluid : 뷰포트 전체폭까지 늘어나는 최대폭 콘테이너 / container (width:1170) : 반응형 고정폭 콘테이너 -->
+    <!-- 그리드를 이용하여 2-3단 구성을 하게되면 레이아웃을 사용하고 따로 float(left/right) 할 필요가 없다 -->
+     <div class="container">
+        <header>
+            <h2>그리드 시스템을 이용한 레이아웃</h2>
+        </header>
+
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav">
+                    <li>menu 1</li>
+                    <li>menu 2</li>
+                    <li>menu 3</li>
+                    <li>menu 4</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <P>**CSS 그리드 레이아웃(Grid Layout)**은 페이지를 여러 주요 영역으로 나누거나, 
+                    크기와 위치 및 문서 계층 구조의 관점에서 HTML 기본 요소로 작성된 콘트롤 간의 관계를 정의하는 데 아주 탁월합니다.
+                    테이블과 마찬가지로 그리드 레이아웃은 세로 열과 가로 행을 기준으로 요소를 정렬할 수 있습니다. 
+                    하지만, 테이블과 달리 CSS 그리드는 다양한 레이아웃을 훨씬 더 쉽게 구현할 수 있습니다. 
+                </P>
+
+                <p>
+                    예를 들어, 그리드 컨테이너 속 자식 요소를, 마치 CSS로 일일이 위치를 지정해 준 것처럼, 
+                    실제로 겹치게 층을 지면서 자리를 잡도록 각 요소의 위치를 지정해 줄 수도 있습니다.
+                </P>
+            </div>
+            <div class="col-md-2">
+                <div class="banner">기타 부가적인 내용이 들어가는 곳</div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            여기가 푸터가 들어가는 곳입니다.
+        </footer>
+     </div>
+    
+ 
+     <!-- jquery(부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ </body>
+ </html>
