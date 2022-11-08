@@ -4,50 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
-
-    
+    <title>navbar</title> 
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-</head>
+
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    </style>
 </head>
 <body>
     <!-- ***bootstrap에서 햄버거 메뉴 만들기 위한 navbar 기본 영역*** -->
     <div class="container"> <!--width : 1170-->
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">로고</a>
-            </div> 
-            <!-- collapse : 메뉴를 보여지게 하는 기능 -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">메뉴1</a></li>
-                    <li><a href="#">메뉴2</a></li>
-                    <li><a href="#">메뉴3</a></li>
-                </ul>
-                <form  class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="검색">
-                    </div>
-                    <button type="submit" class="btn btn-default">submit</button>
-                </form>
+        <!-- navbar-fixed-top / navbar-fixed-bottom : 메뉴바 상 하단 고정기능 -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">로고</a>
+                </div> 
+                
+                <!-- collapse : 메뉴를 보여지게 하는 기능 -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">메뉴1<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">메뉴2<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">메뉴3<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form  class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="검색">
+                        </div>
+                        <button type="submit" class="btn btn-default">submit</button>
+                    </form>
+                </div>
             </div>
         </nav>
+        <article>
+            <p>We can trace the results.
+                We can trace the results back to the location.
+                The results can be traced back to the location.
+                
+                E:
+                You collected it from the location.
+                It was collected from the location.
+                
+                F = D + E
+                The results can be traced back to the location from which it was collected from the location.
+                = The results can be traced back to the location which it was collected from the location.
+                = The results can be traced back to the location where it was collected from the location.
+                
+                G = C + F
+                All samples shall be properly labeled in order to ensure that the results can be traced back to the location from which it was collected.
+            </p>
+        </article>
     </div> 
 
 
-    <!-- jquery(부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ 
 </body>
 </html>
