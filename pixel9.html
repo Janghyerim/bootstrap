@@ -12,44 +12,53 @@
 
     <style>
         @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
-        .navbar{ background-color: #fff; border: none; padding-bottom: 10px;  font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18px;height: 90px; text-transform: capitalize; border-bottom: 1px solid #AAAAAA;}
+        .navbar{ background-color: #fff; border: none; padding-bottom: 10px;  font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18px;height: 90px; text-transform: capitalize; border-bottom: 1px solid #AAAAAA}
         .navbar-toggle {position: relative;margin-top: 40px;top: 2px;}
-        .navbar-nav { padding-right: 10px;margin-top: 20px; background-color: #fff;}
+        .navbar-nav { padding-right: 10px;margin-top: 20px; background-color: #fff}
         .navbar-nav li { margin:0 20px; }
         a:hover {text-decoration: none;}
-        body {padding-top: 90px;}
-        .container-fluid {padding: 0px;}
-        .navbar-brand { padding-left: 20px;}
-        .navbar-default .navbar-nav>li>a:hover { color: orange;}
+        body{padding-top: 90px;}
+        .container-fluid{padding: 0px;}
+        .navbar-brand{padding-left: 20px;}
+        .navbar-default .navbar-nav>li>a:hover { color:orange}
         .navbar-default .navbar-nav>li.active>a,
         .navbar-default .navbar-nav>li.active>a:hover,
-        .navbar-default .navbar-nav>li.active>a:focus { color: #FF8000; background-color: #fff} 
-        .control {position:inherit; top: 50%; display: inline-block; right: 50%;}
+        .navbar-default .navbar-nav>li.active>a:focus
+        { color: #FF8000; background-color: #fff} 
+
+        .control{
+            position: inherit;
+            top : 50%;
+            display: inline-block;
+            right: 50%;
+            z-index: 5;
+        }
+
         @media (max-width: 320px)  {
-        .navbar-brand img { width: 80%; height: auto; margin-top:-100px}  
+            .navbar-brand img { width: 80%; height: auto; margin-top:-100px}  
         }
         @media (max-width: 980px) {
             .navbar-nav li { margin:0 10px;}
         }
-        .service{
+
+        .service {
             margin: 40px 0;
         }
-        
         .service a{
             display: block;
         }
 
         .icons{
-            float: left;
+            float:left;
             display: block;
             font-size: 30px;
-            color: white;
-            background-color: orange;
+            color: #fff;
+            background-color: #FF8000;
             border-radius: 50%;
             text-align: center;
             margin-right: 15px;
             padding: 20px;
-            border: 4px solid #ff804f;
+            border: 4px solid #ff8040;
             transition: all 0.3s;
         }
 
@@ -57,8 +66,8 @@
             background-color: blueviolet;
         }
 
-        .service a:hover .icons h4 {
-            color: coral;
+        .service a:hover .icontxt h4{
+            color:#0080ff
         }
 
         @media (min-width: 768px) {
@@ -74,30 +83,26 @@
         .book img { width: 50%; height: auto;}
         .control { display: none;} 
         }
-
-        header {
+        
+        header{
             color: #fff;
             text-align: center;
             padding: 40px 0;
         }
 
-        header small {
-           color:  #fff;
+        header small{
+            color:#fff;
         }
 
         header p {
-            color: #c0c0c0;
+            color:#c0c0c0;
         }
 
-        .content1 {
+        .content1{
             background-image: url(images/slide.jpg);
             background-repeat: no-repeat;
             background-position: center top;
-            background-attachment: fixed;
-        }
-
-        .about {
-            padding: 50px;
+            background-attachment: fixed;         
         }
 
         .about p {
@@ -106,26 +111,28 @@
             color: #282923;
         }
 
+        .about {
+            padding: 50px 0;
+        }
+
         .panel a {
             display: block;
-            color: #000;
+            color:#000;
         }
 
         .panel a.collapsed {
             color: #0080c0;
         }
-
         .panel-body {
             color: #804000;
         }
 
-        .book {
+        .book{
             margin-left: 10px;
         }
-
-        .book1,.book2,.book3 {
+        .book1, .book2, .book3 {
             position: relative;
-            float: left;
+            float:left;
         }
 
         .book1 {
@@ -138,7 +145,7 @@
         }
 
         .book3 {
-            z-index: 20;
+            z-index: 11;
             margin-left: -100px;
         }
 
@@ -183,35 +190,36 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/pixel1.jpg"alt="First slide">
+                    <img src="images/pixel1.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel2.jpg"alt="First slide">
+                    <img src="images/pixel2.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel3.jpg"alt="First slide">
+                    <img src="images/pixel3.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel4.jpg"alt="First slide">
+                    <img src="images/pixel4.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel5.jpg"alt="First slide">
+                    <img src="images/pixel5.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel6.jpg"alt="First slide">
+                    <img src="images/pixel6.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="images/pixel3.jpg"alt="First slide">
+                    <img src="images/pixel4.jpg" alt="First slide">
                 </div>
             </div>
-            <a  class="left carousel-control" href="#carousel-generic" data-slide="prev">
+            <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
                 <img src="images/left.png" class="control">
             </a>
-            <a  class="right carousel-control" href="#carousel-generic" data-slide="next">
+            <a class="right carousel-control" href="#carousel-generic" data-slide="next">
                 <img src="images/right.png" class="control">
             </a>
+        </div><!-- carousel end -->
 
-        </div> <!--carousel end-->
+
         <div class="container">
             <div class="row service">
                 <div class="col-xs-6 col-md-3">
@@ -386,22 +394,8 @@
                 </div>
             </div>
         </div> <!--about end-->
-        
-        
-
-
-
-
-
-
-
-
 
     </div> <!--container-fluid end-->
-
-
-
-
 
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
